@@ -1,5 +1,5 @@
-<?php include('includes/db.php'); ?>
-<?php include('includes/header.php'); ?>
+<?php include('db.php'); ?>
+<?php include('header.php'); ?>
 
 <div class="container">
   <h1>Welcome to Cosmic Book</h1>
@@ -18,4 +18,4 @@
   </div>
 </div>
 
-<?php include('includes/footer.php'); ?>
+<?php include('footer.php'); ?>
