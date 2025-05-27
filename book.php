@@ -1,6 +1,6 @@
 <?php
-include('includes/db.php');
-include('includes/header.php');
+include('db.php');
+include('header.php');
 $id = intval($_GET['id']);
 $result = $conn->query("SELECT books.*, authors.name AS author_name FROM books JOIN authors ON books.author_id = authors.id WHERE books.id = $id");
 $row = $result->fetch_assoc();
@@ -13,4 +13,4 @@ $row = $result->fetch_assoc();
     <p><?php echo $row['description']; ?></p>
   </div>
 </div>
-<?php include('includes/footer.php'); ?>
+<?php include('footer.php'); ?>
