@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background: #333;
+  padding: 10px;
+}
+header nav ul li {
+  margin: 0 15px;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.container {
+  padding: 20px;
+}
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.book {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  width: calc(33% - 20px);
+}
+.book img {
+  max-width: 100%;
+}
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}

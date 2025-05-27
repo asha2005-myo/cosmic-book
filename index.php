@@ -1,0 +1,21 @@
+<?php include('includes/db.php'); ?>
+<?php include('includes/header.php'); ?>
+
+<div class="container">
+  <h1>Welcome to Cosmic Book</h1>
+  <div class="books">
+    <?php
+    $result = $conn->query("SELECT * FROM books LIMIT 5");
+    while($row = $result->fetch_assoc()) {
+      echo "<div class='book'>";
+      echo "<img src='assets/images/" . $row['cover_image'] . "' alt='Cover'>";
+      echo "<h2>" . $row['title'] . "</h2>";
+      echo "<p>" . substr($row['description'], 0, 100) . "...</p>";
+      echo "<a href='book.php?id=" . $row['id'] . "'>Read more</a>";
+      echo "</div>";
+    }
+    ?>
+  </div>
+</div>
+
+<?php include('includes/footer.php'); ?>
